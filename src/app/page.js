@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <main className="">
       <Navbar />
-      <Hero/>
+      {/* <Hero/> */}
       {/* <CardSlider /> */}
-      {/* <Carousel /> */}
+      <Carousel />
       <About />
       <DFW/>
       <Footer/>
