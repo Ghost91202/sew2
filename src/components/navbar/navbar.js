@@ -4,12 +4,13 @@ import styles from './HoverComponent.css';
 import Link from 'next/link';
 import { TfiAlignRight } from "react-icons/tfi";
 import { CiMail } from "react-icons/ci";
-
+import Logo from "../../../public/shiva-removebg-preview.png"
 // import component 👇
 import Drawer from 'react-modern-drawer'
 
 //import styles 👇
 import 'react-modern-drawer/dist/index.css'
+import Image from 'next/image';
 const Navbar = () => {
   const [ isHovered1, setIsHovered1 ] = useState( false );
   const [ isHovered2, setIsHovered2 ] = useState( false );
@@ -29,30 +30,16 @@ const Navbar = () => {
   }
 
   return (
-    <div className=" ">
+    <div className=" fixed z-50 ">
       <div className={styles.navbar}>
         <div className="flex gap-10 relative bg-orange-500 w-screen pl-20 pr-5 sm:pr-20 text-white justify-between items-center p-1">
-          <div>
-            <h1>logo</h1>
+          <div className=" h-10 z-50 flex items-center gap-2 bg-white/ ">
+            <Image src={Logo} className=" w-10" />
+            <h1>Shiva Engineering works </h1>
           </div>
 
           <div className="hidden sm:flex gap-10  items-center">
-             <div className="flex flex-col">
-            <button
-              onMouseEnter={() => setIsHovered1( true )}
-              onMouseLeave={() => setIsHovered1( false )}
-              className={styles.button}
-            >
-              Home
-            </button>
-            {isHovered1 && (
-              <div className="absolute top-10 z-50 bg-zinc-200 w-screen ">
-                <p className={styles.hoverParagraph}>
-                  Welcome to the Home page!
-                </p>
-              </div>
-            )}
-          </div>
+             <Link href="#" >Home</Link>
 
           <div className="flex flex-col">
             <button
@@ -63,7 +50,7 @@ const Navbar = () => {
               About
             </button>
             {isHovered2 && (
-              <div className="absolute top-10 z-50 bg-zinc-200 w-screen  left-0">
+              <div className="absolute top-10 z-50 bg-zinc-200 w-screen left-0">
                 <div className={styles.hoverParagraph}>
                   <Link href="#">more about us </Link>
                 </div>
@@ -81,7 +68,7 @@ const Navbar = () => {
               {isHovered3 && (
                 <div className="absolute top-10 z-50 bg-zinc-200 w-screen  left-0 p-4">
                   <div className={styles.hoverParagraph}>
-                    <div className="">
+                    <div className=" text-black">
                       <Link href="#">machinery </Link>
                       <Link href="#">machinery </Link>
                       <Link href="#">machinery </Link>
@@ -109,12 +96,12 @@ const Navbar = () => {
             </Drawer>
           </div>
         </div>
-        <div className="sidebar w-24 hidden bg-white/90 sm:flex flex-col justify-between pt-2 right-0 absolute z-50">
+        <div className="sidebar  w-24 hidden bg-white/90 sm:flex flex-col justify-between pt-2 right-0 absolute z-50">
           <div className="absolute mt-10 h-44 overflow-hidden">
             <div className="w-14 linesh bg-gray-400"></div>
             <div className="linesh1 h-5 ml-10 bg-gray-400"></div>
             <div className="w-7 h-7 bg-orange-600 lftbox"></div>
-            <h1 className=" text-orange-500 font-sans text-xl font-bold rotate-90 mt-10">Shiva Engineering works</h1>
+            <h1 className=" text-orange-500 font-sans text-xl font-bold rotate-90 ">Shiva Engineering works</h1>
           </div>
           <div className="h-10 flex justify-center">
             <button onClick={toggleDrawer} >

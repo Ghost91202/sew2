@@ -15,7 +15,7 @@
     @apply absolute top-full left-0 bg-gray-200 p-4 border border-gray-300 border-solid rounded z-10;
 }
 .sidebar{
-    height: 90%;
+    height: 90vh;
 }
 .navbarwidth{
     width: 100%;

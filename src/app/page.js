@@ -2,12 +2,16 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer"
 import CardSlider from "@/components/cards/cardsslider";
 import Carousel from "../components/hero/carousel"
+import Hero from "@/components/hero/hero";
+import About from "@/components/about/about";
 export default function Home() {
   return (
     <main className="">
-      <Navbar/>
+      <Navbar />
+      <Hero/>
       {/* <CardSlider /> */}
-      <Carousel/>
+      {/* <Carousel /> */}
+      <About/>
       <Footer/>
     </main>
   );

@@ -6,3 +6,14 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+
+.LinsSh{
+    height: 2px;
+}
+.Linesw{
+    width: 2px;
+}
+
+.mlC1{
+    margin-left: 1%;
+}
