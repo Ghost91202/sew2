@@ -27,9 +27,9 @@ const CardCarousel = () => {
   ];
 
   return (
-    <Slider {...settings} className="imageSize w-screen overflow-x-hidden">
+    <Slider {...settings} className="imageSize w-screen overflow-hidden">
       {cards.map((card) => (
-        <div key={card.id} className=" flex w-screen imageSize   overflow-hidden">
+        <div key={card.id} className=" flex w-screen imageSize overflow-hidden">
             <Image src={card.img}  className=" w-full imageSize" />
         </div>
       ))}

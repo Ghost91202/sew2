@@ -27,8 +27,12 @@ const Navbar = () => {
   return (
     <div className=" ">
       <div className={styles.navbar}>
-        <div className="flex gap-10 relative bg-orange-500 w-screen text-white items-center p-1">
-          <div className="flex flex-col">
+        <div className="flex gap-10 relative bg-orange-500 w-screen text-white justify-around items-center p-1">
+          <div>
+          
+          </div>
+          <div className="flex gap-10 items-center">
+             <div className="flex flex-col">
             <button
               onMouseEnter={() => setIsHovered1( true )}
               onMouseLeave={() => setIsHovered1( false )}
@@ -87,17 +91,21 @@ const Navbar = () => {
               )}
             </div>
           </div>
+         </div>
         </div>
         <div className="sidebar w-24 bg-white/90 flex flex-col justify-between pt-2 right-0 absolute z-50">
+          <div className="absolute mt-10 h-44 overflow-hidden">
+            <div className="w-14 linesh bg-gray-400"></div>
+            <div className="linesh1 h-5 ml-10 bg-gray-400"></div>
+            <div className="w-7 h-7 bg-orange-600 lftbox"></div>
+            <h1 className=" text-orange-500 font-sans text-xl font-bold rotate-90 mt-10">Shiva Engineering works</h1>
+          </div>
           <div className="h-10 flex justify-center">
             <button onClick={toggleDrawer} >
               <TfiAlignRight className="text-3xl" />
-              <div>
-                <span className="w-6 h-1 bg-gray-400"></span>
-                <span></span>
-                <span></span>
-              </div>
+
             </button>
+
             <Drawer
               open={isOpen}
               onClose={toggleDrawer}
@@ -107,6 +115,7 @@ const Navbar = () => {
               <div>Hello World</div>
             </Drawer>
           </div>
+
           <div className="h-16 flex justify-center items-center bg-orange-600 p-2">
             <button onClick={toggleDrawer2} >
               <CiMail className="text-4xl flex text-white " />
