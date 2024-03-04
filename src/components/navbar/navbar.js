@@ -23,15 +23,20 @@ const Navbar = () => {
   const toggleDrawer2 = () => {
     setIsOpen2( ( prevState ) => !prevState )
   }
+  const [ isOpen3, setIsOpen3 ] = React.useState( false )
+  const toggleDrawer3 = () => {
+    setIsOpen3( ( prevState ) => !prevState )
+  }
 
   return (
     <div className=" ">
       <div className={styles.navbar}>
-        <div className="flex gap-10 relative bg-orange-500 w-screen text-white justify-around items-center p-1">
+        <div className="flex gap-10 relative bg-orange-500 w-screen pl-20 pr-5 sm:pr-20 text-white justify-between items-center p-1">
           <div>
-          
+            <h1>logo</h1>
           </div>
-          <div className="flex gap-10 items-center">
+
+          <div className="hidden sm:flex gap-10  items-center">
              <div className="flex flex-col">
             <button
               onMouseEnter={() => setIsHovered1( true )}
@@ -91,9 +96,20 @@ const Navbar = () => {
               )}
             </div>
           </div>
-         </div>
+          </div>
+           <div className="sm:hidden flex ">
+            <button onClick={toggleDrawer3}><TfiAlignRight/></button>
+            <Drawer
+                open={isOpen3}
+                onClose={toggleDrawer3}
+                direction='right'
+                className='bla bla bla'
+            >
+                <div className="text-black">Hello World</div>
+            </Drawer>
+          </div>
         </div>
-        <div className="sidebar w-24 bg-white/90 flex flex-col justify-between pt-2 right-0 absolute z-50">
+        <div className="sidebar w-24 hidden bg-white/90 sm:flex flex-col justify-between pt-2 right-0 absolute z-50">
           <div className="absolute mt-10 h-44 overflow-hidden">
             <div className="w-14 linesh bg-gray-400"></div>
             <div className="linesh1 h-5 ml-10 bg-gray-400"></div>
@@ -132,6 +148,7 @@ const Navbar = () => {
 
           </div>
         </div>
+
       </div>
 
     </div>
