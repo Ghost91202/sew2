@@ -4,6 +4,7 @@ import CardSlider from "@/components/cards/cardsslider";
 import Carousel from "../components/hero/carousel"
 import Hero from "@/components/hero/hero";
 import About from "@/components/about/about";
+import DFW from "@/components/layout/whywe"
 export default function Home() {
   return (
     <main className="">
@@ -11,7 +12,8 @@ export default function Home() {
       <Hero/>
       {/* <CardSlider /> */}
       {/* <Carousel /> */}
-      <About/>
+      <About />
+      <DFW/>
       <Footer/>
     </main>
   );

@@ -23,9 +23,9 @@ export default function About( params ) {
                 </div>
                 <div className=" flex flex-col gap-2 lg:text-xl text-sm">
                     <h3><span className="text-black/50">
-                        Shiva Engineering Works   was founded in 1947 as an institute for research and development and is today one of the world's leading
+                        Shiva Engineering Works   was founded in 1947 as an institute for research and development and is today one of the world&apos;s leading
                     </span> manufacturers of vibratory feeders, screening machines and magnetic separators.</h3>
-                    <h4> Quality and reliability <span className="text-black/50"> as well as the factors of safety and economy have been IFE's top priorities for more than seven decades: This orientation as well as continuous innovations enable IFE to assert itself on the world market as a leading supplier for machines in the bulk materials industry.</span>   </h4>
+                    <h4> Quality and reliability <span className="text-black/50"> as well as the factors of safety and economy have been IFE&apos;s top priorities for more than seven decades: This orientation as well as continuous innovations enable IFE to assert itself on the world market as a leading supplier for machines in the bulk materials industry.</span>   </h4>
                     <h5 className="text-black/50">Experience gained through deliveries for many applications in a wide range of industries is optimally utilized for our customers and is the driving force for continuous further and new product developments.</h5>
 
                 </div>
