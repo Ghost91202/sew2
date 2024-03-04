@@ -1,0 +1,28 @@
+
+
+.card-slider {
+    overflow: hidden;
+}
+
+.cards-wrapper {
+    display: flex;
+    transition: transform 0.7s ease-in-out;
+}
+
+.card {
+    flex: 0 0 25%;
+    /* Display 4 cards in a row */
+    box-sizing: border-box;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
