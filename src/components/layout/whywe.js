@@ -5,9 +5,9 @@ import { GiShakingHands } from "react-icons/gi";
 
 export default function Whywe( params ) {
     return (
-        <div className="flex flex-col gap-5 p-10 lg:p-20">
+        <div className="flex flex-col gap-5 p-10 lg:p-20 text-gray-600">
             <h1 className=" lg:text-4xl text-2xl font-semibold">This makes IFE unique</h1>
-            <div className=" grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-4 justify-center items-center grid-flow-row gap-5">
+            <div className=" grid sm:grid-cols-2 grid-cols-1 h-auto lg:h-72 lg:grid-cols-4 justify-center items-center grid-flow-row gap-5">
                 <div className="flex  gap-2">
                     <div className="">
                         <LuScale3D className="bg-orange-600 text-white text-5xl rounded-lg p-1" />

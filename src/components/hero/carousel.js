@@ -4,7 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './CardCarousel.css'; // Create this CSS file for styling
-import tryimg from "../../../public/try.jpg"
+import tryimg from "../../../public/hero.jpg"
 import Image from 'next/image';
 import "./CardCarousel.css"
 import "../../app/globals.css"

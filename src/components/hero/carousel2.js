@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import './ImageSlider.css'; // Create this CSS file for styling
-import imttry from "../../../public/try.jpg"
+import imttry from "../../../public/hero.jpg"
 import Image from 'next/image';
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
