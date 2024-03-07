@@ -17,7 +17,7 @@ const ImageSlider = () => {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(nextSlide, 3000); // Change the duration as needed (in milliseconds)
+    const intervalId = setInterval(nextSlide, 100); // Change the duration as needed (in milliseconds)
 
     return () => {
       clearInterval(intervalId); // Cleanup the interval on component unmount
