@@ -41,7 +41,7 @@ const CardSlider = () => {
                  <div className="card-slider ">
                 <div
                     className="cards-wrapper"
-                    style={{ transform: `translateX(-${ currentIndex * 37 }%)` }}>
+                    style={{ transform: `translateX(-${ currentIndex * 50 }%)` }}>
                      {cards.map( ( card ) => (
                         <div key={card.id} className="card h-3/4 ">
                              <Image src={card.img} className="h-full rounded-lg" />

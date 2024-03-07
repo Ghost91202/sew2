@@ -1,33 +1,32 @@
-.card-slider2 {
+.card-slider3 {
     overflow: hidden;
 }
 
-.cards-wrapper2 {
+.cards-wrapper3 {
     display: flex;
     transition: transform 0.7s ease-in-out;
 }
 
-.card2 {
+.card3 {
     flex: 0 0 25%;
     /* Display 4 cards in a row */
     box-sizing: border-box;
     padding: 10px;
     margin-right: 10px;
 }
+
 @media only screen and (min-width:325px) and (max-width: 425px) {
-.card2 {
+    .card3 {
         flex: 0 0 50%;
 
     }
 
 
 }
-
-
-.prev-button2 {
+.prev-button3 {
     left: 0;
 }
 
-.next-button2 {
+.next-button3 {
     right: 0;
 }

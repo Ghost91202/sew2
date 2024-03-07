@@ -8,6 +8,8 @@ import DFW from "@/components/layout/whywe"
 import Details from "@/components/layout/deatils";
 import Material from "@/components/layout/material";
 import Install from "@/components/cards/carouselslider"
+import BestSeller from "@/components/cards/bestseller"
+import LookingFor from "@/components/layout/looking"
 export default function Home() {
   return (
     <main className="">
@@ -19,7 +21,9 @@ export default function Home() {
       <CardSlider />
       <Details />
       <Material />
-      <Install/>
+      <Install />
+      <BestSeller />
+      <LookingFor/>
       <Footer/>
     </main>
   );
